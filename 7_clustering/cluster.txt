@@ -1,0 +1,34 @@
+Introduction to k means clustering
+
+it states that the points within a cluster should be similar to each other. so, our aim here is to minimize the distance bet te points within a cluster.
+the main objective of the k-means algo is to the sum of distances between points and their respective cluster.
+
+lets now take the an example we have to 8 points and us want to apply k-means to create clusters for these data points.
+
+step 1:choose the no. of clusters k.
+step 2:select k random points from the data as centroids.
+next, we randomly select the centroid for each cluster.let's say we want to have 2 clusters,so k is equal to 2 here.We then randomly select 
+step 3:Assign all the points to closest cluster centroid.
+take a each sample in sequence and compute the distance from the centroid of each of the clusters.
+step 4:Recompute the centroids of newly formed clusters.
+Now,once we have assigned all the points to either cluster, the next step is to compute the centroids of newly formed clusters.Here,the red and green crosses are the new centroids. 
+step 5:repeat step 3 and 4.
+
+
+Stopping criteria for k-means clustering:
+
+there are essentially 3 stopping criteria that can adopted to stop the k-means algo.
+centroids of newly formed clusters xdo not change
+
+
+Weakness of k-mean clustering:
+the no. pf cluster,k must be determined before hand.its disadvantage is tHAT it does not yield the same result with each run,since the resulting clusters depend on the initial random assignments.
+
+
+
+critetia to decide the a value
+
+thumb rule
+scree plot at elbow curve
+domain knowledge and customer requirements
+within sum of square and between sum of square measures
